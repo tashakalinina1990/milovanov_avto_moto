@@ -1,0 +1,27 @@
+.stars {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 8px;
+
+  list-style: none;
+}
+
+.stars__label {
+  display: block;
+  width: 27px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.stars__label .stars__icon {
+  fill: $star-grey;
+  fill-opacity: 0.7;
+}
+
+.stars__label:hover .stars__icon,
+.stars__label:hover ~ .stars__label .stars__icon,
+.stars__input:focus ~ .stars__label .stars__icon,
+.stars__input:checked ~ .stars__label .stars__icon {
+  fill: $basic-red;
+  fill-opacity: 1;
+}

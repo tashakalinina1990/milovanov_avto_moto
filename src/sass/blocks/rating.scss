@@ -1,0 +1,50 @@
+.rating {
+  display: flex;
+}
+
+.rating__stars {
+  position: relative;
+
+  display: block;
+  width: 103px;
+  height: 17px;
+}
+
+.rating__stars::before,
+.rating__stars span::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  background-image: url("../../assets/img/stars.svg");
+  background-repeat: no-repeat;
+  background-size: 103px 17px;
+}
+
+.rating__stars span {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: inline-block;
+  height: 100%;
+
+  overflow: hidden;
+}
+
+
+.rating__stars span::before {
+  background-image: url("../../assets/img/stars-active.svg");
+}
+
+.rating__recomendation {
+  margin-left: 20px;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 20px;
+
+  color: $basic-red;
+}

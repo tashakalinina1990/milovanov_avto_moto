@@ -1,0 +1,31 @@
+.nav__list {
+  display: flex;
+  gap: 68px;
+
+  list-style: none;
+}
+
+.nav__link {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+
+  color: $basic-grey;
+
+  text-decoration: none;
+
+  &:hover {
+    color: $basic-red;
+  }
+
+  &:active {
+    color: $basic-red;
+    opacity: 0.6;
+  }
+}
+
+.nav--secondary .nav__list {
+  gap: unset;
+  justify-content: space-between;
+}

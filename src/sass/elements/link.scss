@@ -1,0 +1,49 @@
+.link {
+  padding: 16.5px 20px;
+
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+
+  text-align: center;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+
+  text-decoration: none;
+
+  color: $basic-white;
+
+  border: none;
+
+  background-color: $basic-red;
+
+  cursor: pointer;
+
+  &:not(:disabled):hover {
+    background-color: $special-red;
+  }
+
+  &:not(:disabled):active {
+    opacity: 0.9;
+  }
+
+  &:disabled {
+    filter: grayscale(1) opacity(0.8);
+    cursor: not-allowed;
+  }
+}
+
+.link--secondary {
+  padding-bottom: 14px;
+
+  border: 1px solid $basic-red;
+
+  color: $basic-red;
+  background-color: transparent;
+
+  &:hover {
+    color: $basic-white;
+    background-color: $basic-red;
+  }
+}

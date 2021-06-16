@@ -1,0 +1,10 @@
+.map__marker {
+  width: 34px;
+  height: 42px;
+
+  background-image: url("../../assets/img/marker.svg");
+  background-repeat: no-repeat;
+  background-size: 34px 42px;
+
+  transform: translate(-50%, -100%);
+}
